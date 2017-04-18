@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "src/comment/build.js",
+        "sourceMap": true
+    },
+    "files": [
+        "core.ts",
+        "sys.ts",
+        "banner.ts",
+        "menu.ts",
+        "search.ts",
+        "program.ts"
+    ]
+}
