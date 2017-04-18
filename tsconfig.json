@@ -1,18 +1,20 @@
 {
     "compilerOptions": {
         "module": "commonjs",
+        "target": "es5",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "typeRoots": [
+            "./node_modules/@types/"
+        ],
         "noImplicitAny": true,
         "removeComments": true,
-        "preserveConstEnums": true,
-        "outFile": "src/comment/build.js",
         "sourceMap": true
     },
-    "files": [
-        "core.ts",
-        "sys.ts",
-        "banner.ts",
-        "menu.ts",
-        "search.ts",
-        "program.ts"
-    ]
+   "compileOnSave": true,
+   "exclude": [
+       "node_modules"
+   ]
 }
