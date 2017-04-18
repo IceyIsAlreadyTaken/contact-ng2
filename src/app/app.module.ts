@@ -4,5 +4,32 @@ import {FormsModule} from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpModule} from '@angular/http';
 
-import {} from './app.routes';
-// import {} from '@angular/core';
+import {rootRouterConfig} from './app.routes';
+import {AppComponent} from './app.component'
+
+
+import {CollectionComponent} from './collection';
+import {ListComponent, ListItemComponent} from './list';
+import {DetailComponent} from './detail';
+import {EditComponent} from './edit';
+
+import {ContactService, UtilService, FooterComponent, 
+  HeaderComponent, PhonePipe, BtnClickDirective} from "./shared";
+
+  @NgModule({
+      declarations:[
+          AppComponent,
+          ListComponent,ListItemComponent,
+          DetailComponent,
+          EditComponent,
+          CollectionComponent,
+          HeaderComponent,FooterComponent,
+          PhonePipe,BtnClickDirective
+      ],
+      imports: [BrowserModule,FormsModule,HttpModule,RouterModule.forRoot(rootRouterConfig)],
+      providers : [ContactService,UtilService],
+      bootstrap: [AppComponent]
+  })
+  export class AppModule{
+
+  }

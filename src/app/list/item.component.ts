@@ -3,8 +3,8 @@ import {Router} from '@angular/router';
 
 @Component({
     selector: 'list-item',
-    templateUrl: 'item.component.html',
-    styleUrls: ['item.component.css']
+    templateUrl: 'app/list/item.component.html',
+    styleUrls: ['app/list/item.component.css']
 })
 
 export class ListItemComponent implements OnInit {

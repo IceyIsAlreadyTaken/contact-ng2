@@ -5,8 +5,8 @@ import {ContactService} from '../shared/contact.service';
 
 @Component({
     selector:'list',
-    templateUrl: 'list.component.html',
-    styleUrls: ['list.component.css']
+    templateUrl: 'app/list/list.component.html',
+    styleUrls: ['app/list/list.component.css']
 })
 
 export class ListComponent implements OnInit{
